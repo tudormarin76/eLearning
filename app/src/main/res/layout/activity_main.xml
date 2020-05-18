@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton
+            android:id="@+id/profilePicture"
+            android:contentDescription="@string/mainProfileImageDescription"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/circlebutton"
+            android:scaleType="centerCrop"
+            >
+        </ImageButton>
+
+
+
+        <TextView
+            android:id="@+id/forYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilePicture"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+
+            android:text="@string/mainNewsTitle"
+            android:textColor="@color/textColor"
+            android:textSize="30sp"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/loadingPanelNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/forYou"
+            android:layout_centerHorizontal="true"
+            android:indeterminateTint="@color/colorAccent"
+            />
+        <HorizontalScrollView
+            android:id="@+id/hsvForYou"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@+id/forYou"
+            android:fillViewport="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:id="@+id/newsLL"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/categoriesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hsvForYou"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/categoriesTitle"
+            android:textColor="@color/textColor"
+            android:textSize="30sp"
+            android:visibility="visible" />
+
+        <HorizontalScrollView
+            android:id="@+id/hsvCategories"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/categoriesTV"
+            android:fillViewport="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:id="@+id/llCategories"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/introToAndroidStudioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedbuttonwhite"
+                    android:text="@string/introToAndroidStudio"
+                    android:textColor="@color/colorAccent"
+                    android:padding="15dp"
+                    android:layout_margin="5dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/javaDeepDiveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedbuttonwhite"
+                    android:text="@string/javaDeepDive"
+                    android:textColor="@color/colorAccent"
+                    android:padding="15dp"
+                    android:layout_margin="5dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/mediaButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedbuttonwhite"
+                    android:text="@string/media"
+                    android:textColor="@color/colorAccent"
+                    android:padding="15dp"
+                    android:layout_margin="5dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/advancedAndroidFeaturesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedbuttonwhite"
+                    android:text="@string/advancedAndroidFeatures"
+                    android:textColor="@color/colorAccent"
+                    android:padding="15dp"
+                    android:layout_margin="5dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/mapsAndGeolocButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedbuttonwhite"
+                    android:text="@string/mapsAndGeolocation"
+                    android:textColor="@color/colorAccent"
+                    android:padding="15dp"
+                    android:layout_margin="5dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/permanentStorageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedbuttonwhite"
+                    android:text="@string/permanentStorage"
+                    android:textColor="@color/colorAccent"
+                    android:padding="15dp"
+                    android:layout_margin="5dp">
+                </Button>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/textMyProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/myProgress"
+            android:layout_below="@id/hsvCategories"
+            android:textSize="30sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/textColor">
+        </TextView>
+        <ProgressBar
+            android:id="@+id/myProgress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="20"
+            android:progress="0"
+            android:layout_below="@id/textMyProgress"
+            android:progressTint="@color/colorAccent"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:padding="20dp">
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/popularTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myProgress"
+            android:text="@string/coursesTitle"
+            android:textSize="30sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/textColor">
+        </TextView>
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mainUpdateButton"
+            android:layout_below="@id/myProgress"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/colorAccent">
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/loadingPanelCourses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/popularTV"
+            android:indeterminate="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminateTint="@color/colorAccent"
+            />
+
+            <com.example.proiect_dam.ExpandableHeightGridView
+                android:id="@+id/glCourses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popularTV"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="20dp"
+                />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

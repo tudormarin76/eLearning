@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="200dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".CourseFragment">
+
+
+    <ImageButton
+        android:id="@+id/courseFragmentImage"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:src="@drawable/introtoandroid"
+        android:scaleType="centerInside"
+        >
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/courseFragmentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/courseTitle"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="10dp"
+        android:textSize="15sp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/textColor"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/courseFragmentDescription"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="@string/courseDescription"
+        android:layout_marginTop="170dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12sp"
+        android:lines="1"
+        android:ellipsize="end"
+        >
+    </TextView>
+
+
+</FrameLayout>

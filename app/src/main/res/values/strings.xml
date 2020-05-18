@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Proiect_DAM</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="myProfileLogoutButton">Log out</string>
+    <string name="myProfileImageDescription">Profile Image</string>
+    <string name="myProfileGetCoursesButton">Get courses content</string>
+    <string name="myProfileNameLayout">Name</string>
+    <string name="myProfileClassLayout">Class</string>
+    <string name="myProfileCoursesListTitle">My courses:</string>
+    <string name="myProfileTableTitle">Your position among all users:</string>
+
+    <string name="courseTitle">Title</string>
+    <string name="courseDescription">Description</string>
+    <string name="courseContent">Content</string>
+
+    <string name="loginLogoDescription">Logo</string>
+    <string name="loginEmailLayout">Email</string>
+    <string name="loginEmailPlaceholder">Enter your email</string>
+    <string name="loginPasswordLayout">Password</string>
+    <string name="loginPasswordPlaceholder">Enter your password</string>
+    <string name="loginButton">Login</string>
+    <string name="signupButton">Register</string>
+
+    <string name="mainProfileImageDescription">Profile Image</string>
+    <string name="mainNewsTitle">For You</string>
+    <string name="categoriesTitle">Categories</string>
+    <string name="introToAndroidStudio">Intro to android studio</string>
+    <string name="javaDeepDive">Java deep dive</string>
+    <string name="media">Media</string>
+    <string name="advancedAndroidFeatures">Advanced Android Features</string>
+    <string name="mapsAndGeolocation">Maps and geolocation</string>
+    <string name="permanentStorage">Permanent storage</string>
+    <string name="myProgress">My Progress:</string>
+    <string name="coursesTitle">Courses</string>
+    <string name="mainUpdateButton">Update</string>
+
+    <string name="signupLogoDescription">Logo</string>
+    <string name="signupProfileImageDescription">Profile Image</string>
+    <string name="signupNameLayout">Name</string>
+    <string name="signupNamelPlaceholder">Enter your name</string>
+    <string name="signupEmailLayout">Email</string>
+    <string name="signupEmailPlaceholder">Enter your email</string>
+    <string name="signupPasswordLayout">Password</string>
+    <string name="signupPasswordPlaceholder">Enter your password</string>
+    <string name="signupClassLayout">Class</string>
+
+    <string name="newsTitle">Title</string>
+    <string name="newsDescription">Description</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

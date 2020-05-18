@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "951570605910",
+    "firebase_url": "https://proiectdam-e74b4.firebaseio.com",
+    "project_id": "proiectdam-e74b4",
+    "storage_bucket": "proiectdam-e74b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951570605910:android:860e94515c248e8df598f7",
+        "android_client_info": {
+          "package_name": "com.example.proiect_dam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951570605910-rrliu8eb49s9v7sqccijrfj4erhmj4jn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIpvzgfRI4zkdBT2J8Gvqka9xN_L1prEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951570605910-rrliu8eb49s9v7sqccijrfj4erhmj4jn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
